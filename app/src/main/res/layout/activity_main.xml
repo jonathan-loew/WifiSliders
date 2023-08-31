@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/spaceBlocker11"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spaceBlocker10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/slider11"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker11"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker11"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderValue11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker11"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker11"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker11" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_11"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker11"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker11"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker11" />
+
+    <TextView
+        android:id="@+id/spaceBlocker10"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spaceBlocker9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/slider10"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker10"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderValue10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker10"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker10"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker10" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_10"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker10"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker10"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker10" />
+
+    <TextView
+        android:id="@+id/spaceBlocker9"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spaceBlocker8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/slider9"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker9"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderValue9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker9"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker9"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker9" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_09"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker9"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker9"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker9" />
+
+    <TextView
+        android:id="@+id/spaceBlocker8"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spaceBlocker7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/slider8"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker8"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker8"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderValue8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker8"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker8"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker8" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_08"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker8"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker8"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker8" />
+
+    <SeekBar
+        android:id="@+id/slider7"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker7"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderValue7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker7"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker7"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_07"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker7"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker7"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker7" />
+
+    <TextView
+        android:id="@+id/spaceBlocker7"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spaceBlocker6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/spaceBlocker6"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_06"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker6"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker6"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker6" />
+
+    <SeekBar
+        android:id="@+id/slider6"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker6"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderValue6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker6"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker6"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker6" />
+
+    <TextView
+        android:id="@+id/spaceBlocker5"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spaceBlocker6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderValue5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker5"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker5"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_05"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker5"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker5"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker5" />
+
+    <SeekBar
+        android:id="@+id/slider5"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker5"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/spaceBlocker4"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spaceBlocker5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderValue4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker4"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker4"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_04"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker4"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker4"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker4" />
+
+    <SeekBar
+        android:id="@+id/slider4"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker4"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/spaceBlocker3"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spaceBlocker4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderValue3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker3"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker3"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_03"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker3"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker3"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker3" />
+
+    <SeekBar
+        android:id="@+id/slider3"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker3"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/slider2"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker2"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_02"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker2"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker2"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker2" />
+
+    <TextView
+        android:id="@+id/sliderValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker2"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker2"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker2" />
+
+    <TextView
+        android:id="@+id/spaceBlocker2"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spaceBlocker3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/slider"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:rotation="270"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sliderlabel_01"
+        app:layout_constraintBottom_toTopOf="@+id/spaceBlocker"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker" />
+
+    <TextView
+        android:id="@+id/sliderValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/spaceBlocker"
+        app:layout_constraintStart_toStartOf="@+id/spaceBlocker"
+        app:layout_constraintTop_toBottomOf="@+id/spaceBlocker" />
+
+    <TextView
+        android:id="@+id/spaceBlocker"
+        android:layout_width="50dp"
+        android:layout_height="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spaceBlocker2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,7 @@
 package de.wifisliders;
 
+import androidx.annotation.NonNull;
+
 import java.sql.Time;
 import java.util.Date;
 
@@ -14,6 +16,7 @@ public class Sending {
         time = new Date();
     }
 
+    @NonNull
     @Override
     public String toString() {
         return toSlider + " " + value + " " + time;

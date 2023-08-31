@@ -12,4 +12,5 @@
     <string name="sliderlabel_09">9</string>
     <string name="sliderlabel_10">10</string>
     <string name="sliderlabel_11">11</string>
+    <string name="resend_all">Resend\nAll</string>
 </resources>

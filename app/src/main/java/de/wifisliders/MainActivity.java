@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,10 +18,14 @@ public class MainActivity extends AppCompatActivity {
 
     UDPBackend udpBackend = new UDPBackend("192.168.240.221", 365);
 
+    public static MainActivity Instance;
+
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Instance = this;
+
         setContentView(R.layout.activity_main);
 
         seekbars = new SeekBar[11];
@@ -56,6 +61,8 @@ public class MainActivity extends AppCompatActivity {
             udpBackend.sendPacket(i, seekbars[i].getProgress());
         }
 
+        findViewById(R.id.resendAllButton).setOnClickListener((View a) -> ResendAll());
+
         for(int j = 0; j < seekbars.length && j < textViews.length; j++) {
             ChangeSliderValueCallback(j);
             final int k = j;
@@ -72,8 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onStopTrackingTouch(SeekBar seekBar) {
-                    udpBackend.sendPacket(k, seekbars[k].getProgress());
-                    //Toast.makeText(getApplicationContext(), k + " " + seekbars[k].getProgress(), Toast.LENGTH_SHORT).show();
+                    SendOne(k);
                 }
             });
         }
@@ -84,5 +90,22 @@ public class MainActivity extends AppCompatActivity {
         //float progress = val / (float) MAXVAL;
         //progress = ((int)(progress * 100)) / 100f;
         textViews[sliderId].setText(String.format("%s", val));
+    }
+
+    public static void MakeStaticToast(String text) {
+        Instance.MakeToast(text);
+    }
+
+    public void MakeToast(String text) {
+        Toast.makeText(getApplicationContext(), text, Toast.LENGTH_SHORT).show();
+    }
+
+    public void SendOne(int k) {
+        udpBackend.sendPacket(k, seekbars[k].getProgress());
+    }
+
+    public void ResendAll() {
+        for(int i = 0; i < seekbars.length; i++)
+            SendOne(i);
     }
 }

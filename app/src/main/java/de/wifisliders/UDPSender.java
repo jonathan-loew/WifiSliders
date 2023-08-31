@@ -37,7 +37,17 @@ public class UDPSender implements Runnable {
 
             System.out.println("Received ack:" + receivedMsg[0]);
 
-            backend.feedback(sending, receivedMsg[0] != 0);
+            switch(receivedMsg[0]) {
+                case 1:
+                    MainActivity.MakeStaticToast("Generic Error from ESP32");
+                case 0:
+                    backend.feedback(sending, true);
+                    break;
+                case 2:
+                    backend.feedback(sending, false);
+                    break;
+            }
+
         }catch(IOException e) {
             System.err.println("Error in Sending or Receiving: ");
             e.printStackTrace();

@@ -9,6 +9,7 @@ public class Sending {
     public final byte toSlider;
     public final byte value;
     public final Date time;
+    public int tries = 0;
 
     public Sending(byte toSlider, byte value) {
         this.toSlider = toSlider;
@@ -19,6 +20,6 @@ public class Sending {
     @NonNull
     @Override
     public String toString() {
-        return toSlider + " " + value + " " + time;
+        return toSlider + ":" + value;
     }
 }

@@ -8,7 +8,9 @@ import java.util.List;
 public class UDPBackend {
     private final SocketAddress address;
 
-    private final List<Sending> sendingList = new ArrayList(100);
+    private final List<Sending> sendingList = new ArrayList<>(100);
+
+    public final int MAX_TRIES = 5;
 
     public UDPBackend(String host, int port) {
         address = new InetSocketAddress(host, port);
@@ -32,6 +34,13 @@ public class UDPBackend {
         sendingList.remove(sending);
         if(successful)
             return;
+
+        if(sending.tries > MAX_TRIES) {
+            //MainActivity.MakeStaticToast("Aborted package (" + sending.toString() + ") after " + MAX_TRIES);
+            System.err.println("Aborted package (" + sending + ") after " + MAX_TRIES);
+            return;
+        }
+
         boolean again = true;
         for (Sending s : sendingList) {
             if(s.toSlider != sending.toSlider)
@@ -41,7 +50,10 @@ public class UDPBackend {
                 break;
             }
         }
-        if(again)
+
+        if(again) {
+            sending.tries++;
             sendPacket(sending);
+        }
     }
 }

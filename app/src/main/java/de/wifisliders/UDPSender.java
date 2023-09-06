@@ -30,7 +30,9 @@ public class UDPSender implements Runnable {
 
             socket.send(packet);
 
-            byte[] receivedMsg = new byte[1]; // 1: Success, 0: No Success
+            backend.feedback(sending, true);
+            /*
+            byte[] receivedMsg = new byte[50];
             DatagramPacket response = new DatagramPacket(receivedMsg, receivedMsg.length);
             socket.setSoTimeout(5000);
             socket.receive(response);
@@ -39,18 +41,18 @@ public class UDPSender implements Runnable {
 
             switch(receivedMsg[0]) {
                 case 1:
-                    MainActivity.MakeStaticToast("Generic Error from ESP32");
+                    System.out.println("Generic Error from ESP32");
                 case 0:
                     backend.feedback(sending, true);
                     break;
                 case 2:
                     backend.feedback(sending, false);
                     break;
-            }
+            }*/
 
-        }catch(IOException e) {
+        } catch(IOException e) {
             System.err.println("Error in Sending or Receiving: ");
-            e.printStackTrace();
+            //e.printStackTrace();
             backend.feedback(sending, false);
         }
     }

@@ -1,16 +1,16 @@
 <resources>
     <string name="app_name">WifiSliders</string>
     <string name="title_text">Virtuelles Mischpult</string>
-    <string name="sliderlabel_01">1</string>
-    <string name="sliderlabel_02">2</string>
-    <string name="sliderlabel_03">3</string>
-    <string name="sliderlabel_04">4</string>
-    <string name="sliderlabel_05">5</string>
-    <string name="sliderlabel_06">6</string>
-    <string name="sliderlabel_07">7</string>
-    <string name="sliderlabel_08">8</string>
-    <string name="sliderlabel_09">9</string>
-    <string name="sliderlabel_10">10</string>
-    <string name="sliderlabel_11">11</string>
+    <string name="sliderlabel_01">Franz\nGitarre</string>
+    <string name="sliderlabel_02">Clemens\nGitarre</string>
+    <string name="sliderlabel_03">Bass</string>
+    <string name="sliderlabel_04">Vocals</string>
+    <string name="sliderlabel_05">Jay\nGitarre</string>
+    <string name="sliderlabel_06">Franz\nMikro</string>
+    <string name="sliderlabel_07">Piano</string>
+    <string name="sliderlabel_08">11/12</string>
+    <string name="sliderlabel_09">FX\nRTN</string>
+    <string name="sliderlabel_10">Group\n1–2</string>
+    <string name="sliderlabel_11">Master</string>
     <string name="resend_all">Resend\nAll</string>
 </resources>

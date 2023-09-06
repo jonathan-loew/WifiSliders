@@ -11,12 +11,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public final int MAXVAL = 100;
+    public final int MAXVAL = 160;
 
     SeekBar[] seekbars;
     TextView[] textViews;
 
-    UDPBackend udpBackend = new UDPBackend("192.168.240.221", 365);
+    UDPBackend udpBackend = new UDPBackend("192.168.4.1", 80);
 
     public static MainActivity Instance;
 
@@ -57,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < seekbars.length; i++) {
             seekbars[i].setMax(MAXVAL);
             seekbars[i].setMin(0);
-            seekbars[i].setProgress((int)(MAXVAL * 0.5f));
-            udpBackend.sendPacket(i, seekbars[i].getProgress());
+            seekbars[i].setProgress(0);
+            //udpBackend.sendPacket(i, seekbars[i].getProgress());
         }
 
         findViewById(R.id.resendAllButton).setOnClickListener((View a) -> ResendAll());
@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                     ChangeSliderValueCallback(k);
+                    SendOne(k);
                 }
 
                 @Override
@@ -79,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onStopTrackingTouch(SeekBar seekBar) {
-                    SendOne(k);
+
                 }
             });
         }
@@ -87,9 +88,9 @@ public class MainActivity extends AppCompatActivity {
 
     void ChangeSliderValueCallback(int sliderId) {
         int val = seekbars[sliderId].getProgress();
-        //float progress = val / (float) MAXVAL;
-        //progress = ((int)(progress * 100)) / 100f;
-        textViews[sliderId].setText(String.format("%s", val));
+        float progress = val / (float) MAXVAL;
+        int prog = (int)(progress * 100) - 75;
+        textViews[sliderId].setText(String.format("%s", prog));
     }
 
     public static void MakeStaticToast(String text) {

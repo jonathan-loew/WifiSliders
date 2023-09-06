@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/spaceBlocker11"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spaceBlocker10"
@@ -43,7 +43,7 @@
 
     <TextView
         android:id="@+id/spaceBlocker10"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spaceBlocker9"
@@ -72,13 +72,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_10"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker10"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker10"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker10" />
 
     <TextView
         android:id="@+id/spaceBlocker9"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spaceBlocker8"
@@ -107,13 +108,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_09"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker9"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker9"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker9" />
 
     <TextView
         android:id="@+id/spaceBlocker8"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spaceBlocker7"
@@ -142,6 +144,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_08"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker8"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker8"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker8" />
@@ -169,13 +172,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_07"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker7"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker7"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker7" />
 
     <TextView
         android:id="@+id/spaceBlocker7"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spaceBlocker6"
@@ -183,7 +187,7 @@
 
     <TextView
         android:id="@+id/spaceBlocker6"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -195,6 +199,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_06"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker6"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker6"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker6" />
@@ -219,7 +224,7 @@
 
     <TextView
         android:id="@+id/spaceBlocker5"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/spaceBlocker6"
@@ -229,6 +234,7 @@
         android:id="@+id/sliderValue5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker5"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker5"
         app:layout_constraintTop_toBottomOf="@+id/spaceBlocker5" />
@@ -238,6 +244,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_05"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker5"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker5"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker5" />
@@ -254,7 +261,7 @@
 
     <TextView
         android:id="@+id/spaceBlocker4"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/spaceBlocker5"
@@ -273,6 +280,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_04"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker4"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker4"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker4" />
@@ -289,7 +297,7 @@
 
     <TextView
         android:id="@+id/spaceBlocker3"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/spaceBlocker4"
@@ -308,6 +316,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_03"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker3"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker3"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker3" />
@@ -337,6 +346,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_02"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker2"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker2"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker2" />
@@ -351,7 +361,7 @@
 
     <TextView
         android:id="@+id/spaceBlocker2"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/spaceBlocker3"
@@ -372,6 +382,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/sliderlabel_01"
+        android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/spaceBlocker"
         app:layout_constraintEnd_toEndOf="@+id/spaceBlocker"
         app:layout_constraintStart_toStartOf="@+id/spaceBlocker" />
@@ -386,7 +397,7 @@
 
     <TextView
         android:id="@+id/spaceBlocker"
-        android:layout_width="50dp"
+        android:layout_width="60dp"
         android:layout_height="280dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/spaceBlocker2"
